@@ -8,7 +8,17 @@
       rel="stylesheet"
       href="{{ url_for('static',filename='css/style.css') }}"
     />
+    <!-- remove the line below after finishing the ui -->
+    <link rel="stylesheet" href="/gozaresh/static/css/style.css" />
     <title>گزارش درسی</title>
   </head>
-  <body></body>
+  <body>
+    <form action="/submit" id="form">
+      <input type="text" name="lesson" placeholder="موضوع درس" />
+      <input type="text" name="activity" placeholder="مطلب تدریس شده" />
+      <input type="text" name="homework" placeholder="تکالیف داده شده" />
+      <input type="text" name="reading" placeholder="مطالعه" />
+      <button type="submit">گزارش رو بساز!</button>
+    </form>
+  </body>
 </html>

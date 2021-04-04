@@ -1,0 +1,77 @@
+body {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
+#form {
+  display: grid;
+  grid-template-areas:
+    "lesson activity"
+    "homework reading"
+    "button button";
+  grid-gap: 3rem 4rem;
+
+  input {
+    min-width: 16rem;
+    height: 3rem;
+    background: $bg;
+    color: $text_color;
+    font: 1rem dana;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1.125rem;
+    box-shadow: 1.125rem 1.125rem 1.875rem $bottom_shadow,
+      -1.125rem -1.125rem 1.875rem $top_shadow;
+
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #ccc;
+      opacity: 1;
+    }
+
+    // I copied this from stackoverflow which basicly removes (delays) the blue background that chrome creates when using autofill
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      transition: background-color 1s ease-in-out 5000s;
+    }
+  }
+
+  button {
+    height: 3rem;
+    background: $bg;
+    color: $text_color;
+    font: 1rem dana;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1.125rem;
+    grid-area: button;
+    box-shadow: 1.125rem 1.125rem 1.875rem $bottom_shadow,
+      -1.125rem -1.125rem 1.875rem $top_shadow;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+input[name="lesson"] {
+  grid-area: lesson;
+}
+input[name="activity"] {
+  grid-area: activity;
+}
+input[name="homework"] {
+  grid-area: homework;
+}
+input[name="reading"] {
+  grid-area: reading;
+}

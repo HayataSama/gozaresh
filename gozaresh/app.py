@@ -35,6 +35,8 @@ def mainFunc(lesson, activity, homework, reading):
     motalee = reading
     if motalee == '1':
         motalee = '-----'
+    elif motalee == 'مرور':
+        motalee = 'مرور مطالب تدریس شده'
 
     # output_str = f'''
     # 💫 برنامه {weekday} {tarikhvalid}

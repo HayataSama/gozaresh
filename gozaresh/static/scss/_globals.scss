@@ -16,4 +16,13 @@ body {
   font-family: dana;
   direction: rtl;
   background: $bg;
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
+.shadow {
+  box-shadow: 1.125rem 1.125rem 1.875rem $bottom_shadow,
+    -1.125rem -1.125rem 1.875rem $top_shadow;
 }

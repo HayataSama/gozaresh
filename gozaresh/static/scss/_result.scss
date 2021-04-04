@@ -1,0 +1,41 @@
+#textarea {
+  //reset
+  border: none;
+  resize: none;
+  overflow: hidden;
+  min-width: 32rem;
+  min-height: 284px;
+  background: $bg;
+  font: 1.25rem dana;
+  line-height: 2;
+  border-radius: 1.125rem;
+  padding: 0.5rem 1rem;
+  grid-area: text;
+  &:focus {
+    outline: none;
+  }
+}
+
+.copybtn {
+  border: none;
+
+  background: $bg;
+  font: 1rem dana;
+  border-radius: 1.125rem;
+  padding: 0.5rem 1rem;
+  grid-area: copybutton;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.box {
+  display: grid;
+  grid-template-areas:
+    "text"
+    "copybutton";
+  grid-gap: 3rem;
+}

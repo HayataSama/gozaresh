@@ -2,19 +2,9 @@
   font-family: dana;
   font-style: normal;
   font-weight: normal;
-  src: url("/gozaresh/static/fonts/dana-regular.eot");
-  src: url("/gozaresh/static/fonts/dana-regular.eot?#iefix") format("embedded-opentype"), url("/gozaresh/static/fonts/dana-regular.woff2") format("woff2"), url("/gozaresh/static/fonts/dana-regular.woff") format("woff");
+  src: url("/static/fonts/dana-regular.eot");
+  src: url("/static/fonts/dana-regular.eot?#iefix") format("embedded-opentype"), url("/static/fonts/dana-regular.woff2") format("woff2"), url("/static/fonts/dana-regular.woff") format("woff");
   /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-
-body {
-  display: -ms-grid;
-  display: grid;
-  height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
 }
 
 #form {
@@ -33,8 +23,6 @@ body {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 1.125rem;
-  -webkit-box-shadow: 1.125rem 1.125rem 1.875rem #d0d7dc, -1.125rem -1.125rem 1.875rem #ffffff;
-          box-shadow: 1.125rem 1.125rem 1.875rem #d0d7dc, -1.125rem -1.125rem 1.875rem #ffffff;
 }
 
 #form input:focus {
@@ -78,8 +66,6 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: button;
-  -webkit-box-shadow: 1.125rem 1.125rem 1.875rem #d0d7dc, -1.125rem -1.125rem 1.875rem #ffffff;
-          box-shadow: 1.125rem 1.125rem 1.875rem #d0d7dc, -1.125rem -1.125rem 1.875rem #ffffff;
 }
 
 #form button:hover {
@@ -114,6 +100,52 @@ input[name="reading"] {
   grid-area: reading;
 }
 
+#textarea {
+  border: none;
+  resize: none;
+  overflow: hidden;
+  min-width: 32rem;
+  min-height: 284px;
+  background: #eceff1;
+  font: 1.25rem dana;
+  line-height: 2;
+  border-radius: 1.125rem;
+  padding: 0.5rem 1rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+#textarea:focus {
+  outline: none;
+}
+
+.copybtn {
+  border: none;
+  background: #eceff1;
+  font: 1rem dana;
+  border-radius: 1.125rem;
+  padding: 0.5rem 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: copybutton;
+}
+
+.copybtn:hover {
+  cursor: pointer;
+}
+
+.copybtn:focus {
+  outline: none;
+}
+
+.box {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "text" "copybutton";
+  grid-gap: 3rem;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -134,4 +166,16 @@ body {
   font-family: dana;
   direction: rtl;
   background: #eceff1;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.shadow {
+  -webkit-box-shadow: 1.125rem 1.125rem 1.875rem #d0d7dc, -1.125rem -1.125rem 1.875rem #ffffff;
+          box-shadow: 1.125rem 1.125rem 1.875rem #d0d7dc, -1.125rem -1.125rem 1.875rem #ffffff;
 }

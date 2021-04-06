@@ -23,6 +23,11 @@ body {
 }
 
 .shadow {
-  box-shadow: 1.125rem 1.125rem 1.875rem $bottom_shadow,
-    -1.125rem -1.125rem 1.875rem $top_shadow;
+  // light mode shadow
+  box-shadow: 0.625rem 0.625rem 1.25rem $bottom_shadow,
+    -0.625rem -0.625rem 1.25rem $top_shadow;
+
+  // dark mode shadow
+  // box-shadow: 0.625rem 0.625rem 1.25rem $bottom_shadow_dark,
+  //   -0.625rem -0.625rem 1.25rem $top_shadow_dark;
 }

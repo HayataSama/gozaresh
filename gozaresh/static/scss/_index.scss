@@ -29,6 +29,7 @@
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
+      -webkit-text-fill-color: $text_color;
       transition: background-color 1s ease-in-out 5000s;
     }
   }

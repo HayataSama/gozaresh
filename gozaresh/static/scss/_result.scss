@@ -11,6 +11,7 @@
   border-radius: 1.125rem;
   padding: 0.5rem 1rem;
   grid-area: text;
+  color: $text_color;
   &:focus {
     outline: none;
   }
@@ -24,6 +25,7 @@
   border-radius: 1.125rem;
   padding: 0.5rem 1rem;
   grid-area: copybutton;
+  color: $text_color;
   &:hover {
     cursor: pointer;
   }

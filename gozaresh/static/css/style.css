@@ -50,6 +50,7 @@
 }
 
 #form input:-webkit-autofill, #form input:-webkit-autofill:hover, #form input:-webkit-autofill:focus, #form input:-webkit-autofill:active {
+  -webkit-text-fill-color: #263238;
   -webkit-transition: background-color 1s ease-in-out 5000s;
   transition: background-color 1s ease-in-out 5000s;
 }
@@ -114,6 +115,7 @@ input[name="reading"] {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text;
+  color: #263238;
 }
 
 #textarea:focus {
@@ -129,6 +131,7 @@ input[name="reading"] {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: copybutton;
+  color: #263238;
 }
 
 .copybtn:hover {
@@ -176,6 +179,6 @@ body {
 }
 
 .shadow {
-  -webkit-box-shadow: 1.125rem 1.125rem 1.875rem #d0d7dc, -1.125rem -1.125rem 1.875rem #ffffff;
-          box-shadow: 1.125rem 1.125rem 1.875rem #d0d7dc, -1.125rem -1.125rem 1.875rem #ffffff;
+  -webkit-box-shadow: 0.625rem 0.625rem 1.25rem #d4d7d9, -0.625rem -0.625rem 1.25rem #ffffff;
+          box-shadow: 0.625rem 0.625rem 1.25rem #d4d7d9, -0.625rem -0.625rem 1.25rem #ffffff;
 }

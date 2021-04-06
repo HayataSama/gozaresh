@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,11 @@
     <title>گزارش درسی</title>
   </head>
   <body>
+    <div class="toggle-container">
+      <input type="checkbox" name="theme" id="switch" /><label for="switch"
+        >Toggle</label
+      >
+    </div>
     <form action="/submit" id="form">
       <input type="text" class="shadow" name="lesson" placeholder="موضوع درس" />
       <input
@@ -28,5 +33,6 @@
       <input type="text" class="shadow" name="reading" placeholder="مطالعه" />
       <button type="submit" class="shadow">گزارش رو بساز!</button>
     </form>
+    <script src="{{ url_for('static',filename='js/app.js') }}"></script>
   </body>
 </html>

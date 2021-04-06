@@ -1,0 +1,48 @@
+html[data-theme="dark"] {
+  .shadow {
+    // dark mode shadow
+    box-shadow: 10px 10px 15px #222d32, -10px -10px 15px #2a373e !important;
+  }
+  body {
+    background: $bg_dark !important;
+  }
+  input {
+    background: $bg_dark !important;
+    color: $text_color_dark !important;
+
+    // I copied this from stackoverflow which basicly removes (delays) the blue background that chrome creates when using autofill
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-text-fill-color: $text_color_dark !important;
+    }
+  }
+
+  button {
+    background: $bg_dark !important;
+    color: $text_color_dark !important;
+  }
+
+  label {
+    background: $bg !important;
+  }
+
+  label:after {
+    background: $bg_dark !important;
+  }
+
+  input:checked + label {
+    background: $bg !important;
+  }
+
+  #textarea {
+    background: $bg_dark !important;
+    color: $text_color_dark !important;
+  }
+
+  .copybtn {
+    background: $bg_dark !important;
+    color: $text_color_dark !important;
+  }
+}

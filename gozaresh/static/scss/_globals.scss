@@ -24,10 +24,11 @@ body {
 
 .shadow {
   // light mode shadow
-  box-shadow: 0.625rem 0.625rem 1.25rem $bottom_shadow,
-    -0.625rem -0.625rem 1.25rem $top_shadow;
+  box-shadow: 10px 10px 15px #d4d7d9, -10px -10px 15px #ffffff;
+}
 
-  // dark mode shadow
-  // box-shadow: 0.625rem 0.625rem 1.25rem $bottom_shadow_dark,
-  //   -0.625rem -0.625rem 1.25rem $top_shadow_dark;
+.toggle-container {
+  position: absolute;
+  left: 40px;
+  top: 40px;
 }

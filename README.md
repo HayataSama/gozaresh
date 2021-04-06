@@ -8,5 +8,3 @@ UI has changed to Neumorphism Design but core is the same
 - ".box" doesn't get bigger after writing longer texts
 
 - Program is not responsive so there may be issues in small screen sizes.
-
-- Shadows become layered and blurry in the dark mode.

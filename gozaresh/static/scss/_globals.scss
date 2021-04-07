@@ -25,6 +25,9 @@ body {
 .shadow {
   // light mode shadow
   box-shadow: 10px 10px 15px #d4d7d9, -10px -10px 15px #ffffff;
+  &:focus {
+    box-shadow: inset 5px 5px 10px #d4d7d9, inset -5px -5px 10px #ffffff;
+  }
 }
 
 .toggle-container {

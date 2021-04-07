@@ -97,7 +97,7 @@ html {
   }
 
   input:checked + label {
-    background: var(--color-headings);
+    background: $bg_dark;
   }
 
   input:checked + label:after {

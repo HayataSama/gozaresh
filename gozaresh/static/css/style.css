@@ -132,7 +132,7 @@ html label:after {
 }
 
 html input:checked + label {
-  background: var(--color-headings);
+  background: #263238;
 }
 
 html input:checked + label:after {
@@ -227,6 +227,11 @@ body {
           box-shadow: 10px 10px 15px #d4d7d9, -10px -10px 15px #ffffff;
 }
 
+.shadow:focus {
+  -webkit-box-shadow: inset 5px 5px 10px #d4d7d9, inset -5px -5px 10px #ffffff;
+          box-shadow: inset 5px 5px 10px #d4d7d9, inset -5px -5px 10px #ffffff;
+}
+
 .toggle-container {
   position: absolute;
   left: 40px;
@@ -236,6 +241,11 @@ body {
 html[data-theme="dark"] .shadow {
   -webkit-box-shadow: 10px 10px 15px #222d32, -10px -10px 15px #2a373e !important;
           box-shadow: 10px 10px 15px #222d32, -10px -10px 15px #2a373e !important;
+}
+
+html[data-theme="dark"] .shadow:focus {
+  -webkit-box-shadow: inset 10px 10px 15px #222d32, inset -10px -10px 15px #2a373e !important;
+          box-shadow: inset 10px 10px 15px #222d32, inset -10px -10px 15px #2a373e !important;
 }
 
 html[data-theme="dark"] body {

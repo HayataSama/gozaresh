@@ -2,6 +2,9 @@ html[data-theme="dark"] {
   .shadow {
     // dark mode shadow
     box-shadow: 10px 10px 15px #222d32, -10px -10px 15px #2a373e !important;
+    &:focus {
+      box-shadow: inset 10px 10px 15px #222d32, inset -10px -10px 15px #2a373e !important;
+    }
   }
   body {
     background: $bg_dark !important;
